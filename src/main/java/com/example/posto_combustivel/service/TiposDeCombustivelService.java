@@ -29,7 +29,7 @@ public class TiposDeCombustivelService {
 
     @Transactional
     public void deletarTipoDeCombustivel(Integer id){
-        tipoDeCombustivelRepository.deleteByid(id);
+        tipoDeCombustivelRepository.deleteById(id);
     }
 
     public void alterarTipoDeCombustivel(Integer id, TiposDeCombustivel tiposDeCombustivel){
