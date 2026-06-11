@@ -7,14 +7,14 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tipos_de_combustivel")
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class TiposDeCombustivel {
 
-    @id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "nome")

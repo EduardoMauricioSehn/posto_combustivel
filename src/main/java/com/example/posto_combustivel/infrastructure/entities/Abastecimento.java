@@ -8,14 +8,14 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "abastecimento")
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class Abastecimento {
 
-    @id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @OneToOne
@@ -27,5 +27,4 @@ public class Abastecimento {
     private BigDecimal valorTotal;
     @Column(name = "quantidade_litros")
     private Long quantidadeLitros;
-
 }

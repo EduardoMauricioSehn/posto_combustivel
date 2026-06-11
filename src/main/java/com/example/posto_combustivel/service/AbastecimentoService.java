@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -31,5 +32,9 @@ public class AbastecimentoService {
                 .build();
 
         abastecimentoRepository.save(abastecimento);
+    }
+
+    public List<Abastecimento> buscarAbastecimento(){
+        return abastecimentoRepository.findAll();
     }
 }
